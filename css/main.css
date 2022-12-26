@@ -1,3 +1,11 @@
+.title {
+    width: 1200px;
+    margin: 0 auto;
+    font-size: 20px;
+    color: #D7177B;
+    padding: 100px 0;
+}
+
 .header .inner {
     position: absolute;
     display: flex;
@@ -24,15 +32,18 @@
 }
 
 
+
+
 .mainSlide .itm {
     position: relative;
+    z-index: 1;
 }
 
 .mainSlide .itm h2 {
     position: absolute;
-    top: 35%;
+    top: 37%;
     left: 40px;
-    font-size: 40px;
+    font-size: 60px;
     font-weight: 700;
     color: #fff;
     z-index: 1;
@@ -41,10 +52,10 @@
 .mainSlide .itm h2::after {
     content: "";
     position: absolute;
-    top: -20px;
-    left: -20px;
-    width: 80px;
-    height: 80px;
+    top: -15px;
+    left: -26px;
+    width: 85px;
+    height: 85px;
     border-radius: 50%;
     background: url(../img/raster@2x.png)rgba(255, 255, 255, 0.3);
     z-index: -1;
@@ -53,9 +64,9 @@
 
 .mainSlide .itm p {
     position: absolute;
-    top: 41%;
+    top: 44%;
     left: 40px;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 300;
     color: #fff;
 }
@@ -67,6 +78,7 @@
     left: 0;
     right: 0;
     fill: #fff;
+    z-index: 2;
 }
 
 .mainSlide .slick-arrow {
@@ -106,4 +118,68 @@
 
 .mainVisual .num span {
     color: #fff;
+}
+
+/* .mainVisual .linear {
+    position: absolute;
+    top: -21%;
+    z-index: 1;
+} */
+
+.aboutlg {
+    position: relative;
+
+}
+
+.aboutlg .linear {
+    position: absolute;
+    top: -180px;
+    z-index: -1;
+}
+
+.contents_wrap {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    width: 948px;
+    height: 536px;
+}
+
+.contents_wrap .left {
+    width: 33%;
+    margin-right: 25px;
+
+}
+
+.contents_wrap .left .item_inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
+    border: 1px solid #ddd;
+}
+
+.contents_wrap .left .item_inner .icon01 {
+    width: 80px;
+    height: 80px;
+    background: url(../img/tabmenu_ico01.png) no-repeat;
+}
+
+.contents_wrap .right {
+    display: flex;
+    flex-flow: wrap;
+    gap: 25px;
+    width: 66%;
+    justify-content: space-between;
+}
+
+.contents_wrap .right .item_inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    min-height: 255px;
+    padding: 40px 0;
 }
