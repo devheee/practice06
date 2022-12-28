@@ -1,8 +1,9 @@
 .title {
     width: 1200px;
     margin: 0 auto;
-    font-size: 20px;
-    color: #D7177B;
+    font-size: 25px;
+    font-weight: 700;
+    color: #ddd;
     padding: 100px 0;
 }
 
@@ -90,6 +91,7 @@
     font-size: 60px;
     font-weight: 700;
     color: #fff;
+    text-shadow: 1px 1px 5px #111;
     z-index: 1;
 }
 
@@ -180,7 +182,26 @@
     z-index: -1;
 }
 
+.aboutlg .title {
+    display: flex;
+}
 
+.aboutlg .title li~li::before {
+    content: "";
+    display: inline-block;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 20px;
+    background: #ddd;
+
+    margin: 0 10px;
+    vertical-align: middle;
+}
+
+.aboutlg .title>li.on {
+    color: #D7177B;
+}
 
 .contents_wrap {
     display: flex;
@@ -282,13 +303,17 @@
 }
 
 
-
-.contents_wrap02 {
+.contents_wrap02.on {
     display: flex;
     width: 1200px;
     min-height: 536px;
     margin: 0 auto;
     gap: 30px;
+}
+
+.contents_wrap02 {
+    display: none;
+
 }
 
 .contents_wrap02 .lgchem {

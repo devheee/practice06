@@ -9,4 +9,7 @@ $(function () {
         $('.num strong').text(s.slideCount)
     });
 
+    $('.aboutlg .title').on('click', function () {
+        $('.aboutlg .title>li').toggleClass('on')
+    })
 })
