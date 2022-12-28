@@ -17,10 +17,11 @@ $(function () {
         $('.mainContent .contents_wrap').eq(idx).addClass('on').siblings().removeClass('on')
     })
 
-    // $('.newsslide').slick({
-    //     arrows: false,
-    //     autoplay: false,
-    //     slidesToShow: 8,
-    //     slidesToScroll: 8,
-    // });
+    $('.newsslide').slick({
+        arrows: false,
+        autoplay: false,
+        slidesToShow:4,
+        slidesToScroll: 4,
+        rows:2
+    });
 })
