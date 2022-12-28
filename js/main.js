@@ -9,7 +9,11 @@ $(function () {
         $('.num strong').text(s.slideCount)
     });
 
-    $('.aboutlg .title').on('click', function () {
-        $('.aboutlg .title>li').toggleClass('on')
+    $('.aboutlg .title>li').on('click', function (event) {
+        event.preventDefault();
+        var _this = $(this);
+        var idx = $(this).index();
+        $(this).addClass('on').siblings().removeClass('on');
+        $('.aboutlg .contents_wrap').eq(idx).addClass('on').siblings().removeClass('on')
     })
 })
