@@ -4,7 +4,7 @@
     font-size: 25px;
     font-weight: 700;
     color: #ddd;
-    padding: 100px 0;
+    padding: 200px 0 50px 0;
 }
 
 .header .inner {
@@ -172,21 +172,21 @@
     z-index: 1;
 } */
 
-.aboutlg {
+.mainContent {
     position: relative;
 }
 
-.aboutlg .linear {
+.mainContent .linear {
     position: absolute;
     top: -180px;
     z-index: -1;
 }
 
-.aboutlg .title {
+.mainContent .title {
     display: flex;
 }
 
-.aboutlg .title li~li::before {
+.mainContent .title li~li::before {
     content: "";
     display: inline-block;
     top: 0;
@@ -199,7 +199,7 @@
     vertical-align: middle;
 }
 
-.aboutlg .title>li.on {
+.mainContent .title>li.on {
     color: #D7177B;
 }
 
@@ -360,4 +360,222 @@
 
 .lgchem .container .item_inner .txtmenu .rg i {
     font-size: 12px;
+}
+
+
+
+
+.mainBusiness {
+    position: relative;
+
+    padding: 200px 0;
+}
+
+.mainBusiness .linear {
+    position: absolute;
+    bottom: 0;
+    left: auto;
+    right: 0;
+}
+
+.mainBusiness .inner {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.mainBusiness .inner h2 {
+    font-size: 25px;
+    font-weight: 700;
+    color: #D7177B;
+    margin: 0 0 30px 0;
+}
+
+.mainBusiness .inner p {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.mainBusiness strong {
+    font-weight: 700;
+}
+
+.mainBusiness .imgbox {
+    display: flex;
+    gap: 30px;
+    margin: 60px 0;
+}
+
+.mainBusiness .imgbox figure {
+    position: relative;
+    flex: 1;
+    height: 500px;
+    background: #333;
+    overflow: hidden;
+    border-radius: 30px;
+    box-shadow: 15px 15px 40px rgb(0 0 0 / 13%);
+
+    transition: 0.5s;
+}
+
+.mainBusiness .imgbox figure:hover {
+    flex: 2;
+}
+
+.mainBusiness .imgbox .itm01 {
+    background: url(../img/business_bg01.png) no-repeat center center/cover;
+}
+
+.mainBusiness .imgbox .itm02 {
+    background: url(../img/business_bg02.png) no-repeat center center/cover;
+}
+
+.mainBusiness .imgbox .itm03 {
+    background: url(../img/business_bg03.png) no-repeat center center/cover;
+}
+
+.mainBusiness .imgbox figure .over {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 24px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 30px;
+}
+
+.mainNews {
+    position: relative;
+}
+
+.mainNews .inner {
+
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.mainNews .linear {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: auto;
+}
+
+.mainNews .inner .top h2 {
+    font-size: 25px;
+    font-weight: 700;
+    color: #D7177B;
+
+    margin: 0 0 50px 0;
+}
+
+.mainNews .inner .top p {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.mainNews .top strong {
+    font-weight: 700;
+}
+
+.mainNews .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 30px 0;
+}
+
+.mainNews .top ul {
+    display: flex;
+    gap: 20px;
+}
+
+.mainNews .top ul>li {
+    border-radius: 20px;
+    box-shadow: 4px 4px 15px rgb(0 0 0 / 10%);
+}
+
+.mainNews .newsslide {
+    margin: 40px 0 50px 0;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    gap: 40px 10px;
+}
+
+.mainNews .newsslide .itm {
+    width: 270px;
+}
+
+.mainNews .newsslide .itm img {
+    border-radius: 20px;
+    filter: drop-shadow(10px 10px 16px rgba(0, 0, 0, 0.15));
+}
+
+.mainNews .newsslide .itm span {
+    display: inline-block;
+    font-size: 12px;
+    color: #777;
+    margin: 20px 0 10px 0;
+}
+
+.mainNews .newsslide .itm p {
+    font-size: 14px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+
+.footer {
+
+    padding: 30px 0;
+    border-top: 1px solid #ddd;
+
+}
+
+.footer .inner {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .inner .left {
+    flex: 1;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.footer .inner .left dl {
+    display: flex;
+    gap: 15px;
+    line-height: 20px;
+}
+
+.footer .inner .left dl dt {
+    font-weight: 500;
+}
+
+.footer .inner .left address {
+    margin-top: 10px;
+}
+
+.footer .inner .right {
+    position: relative;
+    flex: 1;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 15px;
+}
+
+.footer .inner .right span {
+    position: absolute;
+    top: 40px;
+    background: #f1f1f1;
+    border-radius: 30px;
+    padding: 5px 10px;
 }
