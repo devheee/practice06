@@ -15,13 +15,12 @@ $(function () {
         var idx = $(this).index();
         $(this).addClass('on').siblings().removeClass('on');
 
-        $('.mainContent .contents_wrap').eq(idx).addClass('on').siblings().removeClass('on');
-        // $('.mainContent .sotitle').eq(idx).addClass('on').siblings().removeClass('on');
+        $('.mainContent .tab').eq(idx).addClass('on').siblings().removeClass('on');
 
     })
 
     $('.newsslide').slick({
-        arrows: true,
+        arrows: false,
         dots: true,
         autoplay: false,
         slidesToShow: 4,
@@ -29,15 +28,33 @@ $(function () {
         rows: 2
     });
 
-    // $('.slide_arrow i:nth-child(1)').on('click', function () {
-    //     $('.newsslide').slick('slickPrev')
-    // })
+    $('.slide_arrow i:nth-child(1)').on('click', function () {
+        $('.newsslide').slick('slickPrev')
+    })
 
-    // $('.slide_arrow i:nth-child(2)').on('click', function () {
-    //     $('.newsslide').slick('slickNext')
-    // })
-
-
+    $('.slide_arrow i:nth-child(2)').on('click', function () {
+        $('.newsslide').slick('slickNext')
+    })
 
 
+
+
+    $(window).on('scroll', function () {
+        var scr = $(window).scrollTop();
+    });
+
+    $(window).on('scroll', function () {
+        var scr = $(window).scrollTop(); //스크롤 값을 구함
+        if (scr > 600) {
+            $('#toTop').fadeIn()
+        } else {
+            $('#toTop').fadeOut()
+        }
+
+        // scr > 300 ? $('#toTop').fadeIn() : $('#toTop').fadeOut()
+    });
+
+    $('#toTop').on('click', function () {
+        $('html, body').animate({ scrollTop: 0 })
+    })
 })
