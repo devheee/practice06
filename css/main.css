@@ -88,7 +88,7 @@
 .mainSlide .itm h2 {
     position: absolute;
     top: 37%;
-    left: 40px;
+    left: 360px;
     font-size: 60px;
     font-weight: 700;
     color: #fff;
@@ -112,7 +112,7 @@
 .mainSlide .itm p {
     position: absolute;
     top: 47%;
-    left: 40px;
+    left: 360px;
     font-size: 18px;
     font-weight: 300;
     color: #fff;
@@ -131,7 +131,7 @@
 .mainSlide .slick-arrow {
     position: absolute;
     top: 29%;
-    left: 30px;
+    left: 340px;
     z-index: 999;
     cursor: pointer;
 
@@ -157,10 +157,10 @@
 
 .mainVisual .num {
     position: absolute;
-    top: 296px;
-    left: 89px;
+    top: 297px;
+    left: 399px;
     color: rgba(255, 255, 255, 0.5);
-    font-size: 18px;
+    font-size: 17px;
 }
 
 .mainVisual .num span {
